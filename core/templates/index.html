@@ -1,0 +1,86 @@
+<!doctype html>
+{% load staticfiles %}
+
+<html lang="en">
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kshi</title>
+        <link href="{% static "css/styles.css" %}" rel="stylesheet">
+    </head>
+    <div class="content">
+    <div class="splash">
+        <div class="pure-g-r">
+            <div class="pure-u-1">
+                <div class="l-box splash-text">
+                    <h1 class="splash-head">
+                        TRABALHO DE COMPILADORES
+                    </h1>
+                    <h2 class="splash-subhead">
+                        Construção de um analisador lexico como parte  de Desenvolvimento de um compilador  para uma liguagem chamada "kshi".
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pure-g-r content-ribbon">
+        <div class="pure-u-2-3">
+            <div class="l-box">
+                
+        <p>Para usar o anlisador lexico  siga o exemplo de codigo  abaixo.</p>
+
+                <div class="col-lg-12">
+                        <p>[</p>
+            <p>a=2.5;</p>
+            <p>b=3.5;</p>
+            <p>c=2;</p>
+            <p>d=(a+b+c)/c;</p>
+            <p>print(d);</p>
+            <p>]</p>
+                    </div>
+        <div>
+            <form action="," method="post">
+                    {% csrf_token %}
+                    <textarea id="fonte" name="codigo" class="form-control" placeholder="digite aqui o código fonte" rows="10"></textarea><br>
+                    <p><button  class="btn btn-success" type="submit"  >Léxica</button></p>
+                    
+                </form>
+                    
+                </form>
+        </div>   
+                
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="pure-u-2-3">
+            <div class="l-box">
+                <h4 class="content-subhead">Creditos</h4>
+                <p>
+                   Curso ciencia da computação 
+                   disciplina de compiladorres 
+                   alunos: Eneas Nobre e Tiago fernandes 
+                </p>
+                <h3>
+                    bibliografia 
+
+                </h3>
+            </div>
+
+
+        <div class="footer">
+        Disciplina de compiladores do curso de ciencia da computação
+            </div>
+      
+        </body>
+
+</html>
